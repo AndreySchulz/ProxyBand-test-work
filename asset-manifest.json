@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AndreySchulz/ProxyBand-test-work.git/static/css/main.61cf6cac.css",
+    "main.js": "/AndreySchulz/ProxyBand-test-work.git/static/js/main.a73ce09d.js",
+    "index.html": "/AndreySchulz/ProxyBand-test-work.git/index.html",
+    "main.61cf6cac.css.map": "/AndreySchulz/ProxyBand-test-work.git/static/css/main.61cf6cac.css.map",
+    "main.a73ce09d.js.map": "/AndreySchulz/ProxyBand-test-work.git/static/js/main.a73ce09d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61cf6cac.css",
+    "static/js/main.a73ce09d.js"
+  ]
+}
