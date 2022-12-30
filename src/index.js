@@ -9,7 +9,7 @@ import 'modern-normalize/modern-normalize.css';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/proxy-band-test-work">
+  <BrowserRouter basename="/ProxyBand-test-work">
     <Provider store={store}>
       <App />
     </Provider>
