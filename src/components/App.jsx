@@ -1,24 +1,34 @@
-import ContactForm from './ContactForm/ContactForm';
-import Filter from './Filter/Filter';
-import ContactList from './ContactList/ContactList';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getContacts } from 'redux/contactsOperations';
+import { Route, Routes } from 'react-router-dom';
+import { getUsers } from 'redux/usersOperations';
+import { Suspense } from 'react';
+
+import UserInfo from './UserInfo/UserInfo';
+import UserPost from './UserPost/UserPost';
 
 export function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getContacts());
+    dispatch(getUsers());
   }, [dispatch]);
 
+  const MainLayout = () => {
+    return (
+      <>
+        <Suspense fallback={<p>Loading</p>}>
+          <UserInfo />
+        </Suspense>
+      </>
+    );
+  };
   return (
     <>
-      <h1>Phonebook</h1>
-      <ContactForm />
-
-      <h2>Contacts</h2>
-      <Filter />
-      <ContactList />
+      <Routes>
+        <Route path="/" element={<MainLayout />}></Route>
+        <Route path="/posts/:userId" element={<UserPost />}></Route>
+        <Route path="*" element={<MainLayout />}></Route>
+      </Routes>
     </>
   );
 }

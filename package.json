@@ -1,8 +1,8 @@
 {
-  "name": "goit-react-hw-07-phonebook",
+  "name": "proxy-band-test-work",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://goitacademy.github.io/goit-react-hw-07-phonebook/",
+  "homepage": "https://github.com/AndreySchulz/ProxyBand-test-work.git/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
     "@testing-library/jest-dom": "^5.16.3",
@@ -16,6 +16,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.3.6",
